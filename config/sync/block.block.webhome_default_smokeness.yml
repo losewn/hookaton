@@ -1,0 +1,28 @@
+uuid: efa9e496-9f5a-4f36-a5cc-50167910816e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.smokeness
+  module:
+    - facets
+    - system
+  theme:
+    - webhome_default
+id: webhome_default_smokeness
+theme: webhome_default
+region: header
+weight: -4
+provider: null
+plugin: 'facet_block:smokeness'
+settings:
+  id: 'facet_block:smokeness'
+  label: Smokeness
+  label_display: visible
+  provider: facets
+  block_id: smokeness
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

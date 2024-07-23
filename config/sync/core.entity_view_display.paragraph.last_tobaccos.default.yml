@@ -1,0 +1,26 @@
+uuid: 1739dc31-7382-4908-80f4-1bcf66dbe057
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.last_tobaccos.field_views
+    - paragraphs.paragraphs_type.last_tobaccos
+  module:
+    - viewfield
+id: paragraph.last_tobaccos.default
+targetEntityType: paragraph
+bundle: last_tobaccos
+mode: default
+content:
+  field_views:
+    type: viewfield_default
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

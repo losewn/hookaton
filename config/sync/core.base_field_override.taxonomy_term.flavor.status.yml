@@ -1,0 +1,22 @@
+uuid: 847504e4-d1eb-43f0-9c46-0f731badc1ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flavor
+id: taxonomy_term.flavor.status
+field_name: status
+entity_type: taxonomy_term
+bundle: flavor
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,51 @@
+uuid: 95fd9d04-5a08-47a4-bc1d-b3d4fd00b187
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - core.entity_view_mode.comment.user_voted
+    - field.field.comment.review.field_add_photos
+    - field.field.comment.review.field_comment
+    - field.field.comment.review.field_flavor
+    - field.field.comment.review.field_heat_resistance
+    - field.field.comment.review.field_like_comment
+    - field.field.comment.review.field_like_vud
+    - field.field.comment.review.field_rating
+    - field.field.comment.review.field_smokeness
+    - field.field.comment.review.field_strength
+  module:
+    - fivestar
+id: comment.review.user_voted
+targetEntityType: comment
+bundle: review
+mode: user_voted
+content:
+  field_comment:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_rating:
+    type: fivestar_stars
+    label: hidden
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: smalls
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_add_photos: true
+  field_flavor: true
+  field_heat_resistance: true
+  field_like_comment: true
+  field_like_vud: true
+  field_smokeness: true
+  field_strength: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,29 @@
+uuid: 30709e35-e6b7-4d40-bc73-de6802fe50fd
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:24ead5f5-d9ab-45a1-9535-1ce1d333b07c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: 'col-lg-8 col-md-8'
+id: sloganinsubheader
+theme: webhome_default
+region: subheader
+weight: -11
+provider: null
+plugin: 'block_content:24ead5f5-d9ab-45a1-9535-1ce1d333b07c'
+settings:
+  id: 'block_content:24ead5f5-d9ab-45a1-9535-1ce1d333b07c'
+  label: 'Slogan in subheader'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

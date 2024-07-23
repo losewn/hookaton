@@ -1,0 +1,44 @@
+uuid: fe7f42ee-f987-44c1-a6c1-30895b77fc0c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: page
+label: Paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      advantages:
+        weight: 7
+        enabled: false
+      advantages_item:
+        weight: 8
+        enabled: false
+      last_tobaccos:
+        weight: 9
+        enabled: false
+      layout:
+        weight: 10
+        enabled: false
+      top_banner:
+        weight: 11
+        enabled: false
+      two_block:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

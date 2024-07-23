@@ -1,0 +1,46 @@
+/* Static View-only Star Version */
+.fivestar-smalls div.fivestar-widget-static .star {
+  width: 25px;
+  height: 24px;
+  background: url(small.svg) no-repeat 0 -55px;
+  background-size: cover;
+  margin-right: 7px;
+}
+
+.fivestar-smalls div.fivestar-widget-static .star span.on {
+  background: url(small.svg) no-repeat 0 -27px;
+  background-size: cover;
+  margin-right: 7px;
+}
+
+.fivestar-smalls div.fivestar-widget-static .star span.off {
+  background: url(small.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 7px;
+}
+
+/* Javascript Star Version */
+.fivestar-smalls div.fivestar-widget .cancel,
+.fivestar-smalls div.fivestar-widget .star {
+  width: 25px;
+  height: 24px;
+}
+.fivestar-smalls div.fivestar-widget .cancel,
+.fivestar-smalls div.fivestar-widget .cancel a {
+  background: url(cancel.png) no-repeat 0 0;
+}
+
+.fivestar-smalls div.fivestar-widget .star,
+.fivestar-smalls div.fivestar-widget .star a {
+  background: url(small.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 7px;
+}
+
+.fivestar-smalls div.fivestar-widget div.on a {
+  background-position: 0 -27px;
+}
+.fivestar-smalls div.fivestar-widget div.hover a,
+.fivestar-smalls div.rating div a:hover {
+  background-position: 0 -27px;
+}

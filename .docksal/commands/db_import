@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+set -e
+
+#-------------------------- Helper functions --------------------------------
+
+# Console colors
+red="\033[0;31m"
+NC="\033[0m"
+
+echo-red () { echo -e "${red}$1${NC}"; }
+
+#-------------------------- Execution --------------------------------
+
+if [[ $# -ne 1 ]]; then
+  echo-red "Enter path to dump" >&2
+  exit 7
+fi
+
+dump_path="$1"
+extension="${dump_path##*.}"
+
+case "$extension" in
+
+  'gz')
+    zcat < "$dump_path" | fin db import
+  ;;
+
+  'sql')
+    fin db import "$dump_path"
+  ;;
+
+  *)
+    echo-red "ERR! Expects .sql or .gz file" >&2
+  ;;
+
+esac
+#-------------------------- END: Execution --------------------------------

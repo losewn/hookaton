@@ -1,0 +1,40 @@
+uuid: 1e7da23c-5fff-4344-8d7f-0dc46d7d8ca5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.advantages
+    - paragraphs.paragraphs_type.advantages_item
+  module:
+    - entity_reference_revisions
+id: paragraph.advantages.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: advantages
+label: Item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      advantages_item: advantages_item
+    negate: 0
+    target_bundles_drag_drop:
+      advantages:
+        weight: 5
+        enabled: false
+      advantages_item:
+        weight: 6
+        enabled: true
+      layout:
+        weight: 7
+        enabled: false
+      top_banner:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

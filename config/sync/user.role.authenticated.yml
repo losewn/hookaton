@@ -1,0 +1,38 @@
+uuid: e1304b2d-1dc1-403a-be03-caf04c856c8e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.blog
+    - node.type.subject
+  module:
+    - comment
+    - contact
+    - google_analytics
+    - media
+    - node
+    - search
+    - system
+    - vud
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Авторизований користувач'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create blog content'
+  - 'create image media'
+  - 'create subject content'
+  - 'delete any blog content'
+  - 'delete any subject content'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use vote up/down'
+  - 'view media'

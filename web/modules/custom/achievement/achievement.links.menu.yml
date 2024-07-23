@@ -1,0 +1,23 @@
+entity.achievement_rule.settings:
+  title: Achievement Rule
+  description: Configure an Achievement Rule entity type
+  route_name: entity.achievement_rule.settings
+  parent: system.admin_structure
+entity.achievement_rule.collection:
+  title: Achievement Rules
+  description: List of achievement rules
+  route_name: entity.achievement_rule.collection
+  parent: system.admin_content
+  weight: 20
+
+entity.badge.settings:
+  title: Badge
+  description: Configure a Badge entity type
+  route_name: entity.badge.settings
+  parent: system.admin_structure
+entity.badge.collection:
+  title: Badges
+  description: List of badges
+  route_name: entity.badge.collection
+  parent: system.admin_content
+  weight: 20

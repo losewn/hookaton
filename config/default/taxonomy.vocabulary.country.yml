@@ -1,0 +1,8 @@
+uuid: 2e600f38-f84d-4e11-8155-b77d717fa65d
+langcode: en
+status: true
+dependencies: {  }
+name: Country
+vid: country
+description: 'Country of tobacco manufacture'
+weight: 0

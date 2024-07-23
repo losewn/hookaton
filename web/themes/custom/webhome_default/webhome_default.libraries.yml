@@ -1,0 +1,19 @@
+global-styling:
+  js:
+    js/jquery-1.12.4.min.js: { }
+    js/modernizr-2.8.3.min.js: { }
+    js/ajax-mail.js: { }
+    https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js: { }
+    js/plugins.js: { }
+    js/popper.js: { }
+    js/main.js: { }
+  css:
+    component:
+      https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css: { }
+      css/bundle.css: { }
+      css/plugins.css: { }
+      css/responsive.css: { }
+      css/style.css: { }
+  dependencies:
+    - core/drupal
+    - core/once

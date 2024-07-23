@@ -1,0 +1,23 @@
+uuid: 5d3f7735-f35b-4984-8e64-f687104a03ed
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.top_banner
+  module:
+    - text
+id: paragraph.top_banner.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: top_banner
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

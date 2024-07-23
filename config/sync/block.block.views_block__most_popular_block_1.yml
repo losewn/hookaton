@@ -1,0 +1,29 @@
+uuid: edab1445-56a8-4257-ad4f-53c37d031920
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.most_popular
+  module:
+    - system
+    - views
+  theme:
+    - hookaton_olivero
+id: views_block__most_popular_block_1
+theme: hookaton_olivero
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:most_popular-block_1'
+settings:
+  id: 'views_block:most_popular-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

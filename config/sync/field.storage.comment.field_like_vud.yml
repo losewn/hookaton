@@ -1,0 +1,21 @@
+uuid: 31758daf-8c11-43f0-9a23-0941c07fc98b
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - vud
+id: comment.field_like_vud
+field_name: field_like_vud
+entity_type: comment
+type: vote_up_down_field
+settings:
+  widget: yesno
+  max_length: 255
+module: vud
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

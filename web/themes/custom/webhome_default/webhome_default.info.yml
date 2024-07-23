@@ -1,0 +1,15 @@
+name: Webhome default
+type: theme
+description: Custom theme "Webhome default", maked from 'Starterkit theme'
+core_version_requirement: ^9
+logo: 'img/logo.webp'
+base theme: starterkit_theme
+libraries:
+  - webhome_default/global-styling
+# Regions, quote the names
+regions:
+  subheader: 'Subheader'
+  header: 'Header'
+  content: 'Content'
+  subfooter: 'Subfooter'
+  footer: 'Footer'

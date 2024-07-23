@@ -1,0 +1,41 @@
+flavor:
+  widget_label: 'Flavor icon'
+  css:
+    component:
+      widgets/flavor/flavor.css: {}
+
+heat:
+  widget_label: 'Heat Resistance icon'
+  css:
+    component:
+      widgets/heat/heat.css: {}
+
+smokeness:
+  widget_label: 'Smokeness icon'
+  css:
+    component:
+      widgets/smokeness/smokeness.css: {}
+
+strength:
+  widget_label: 'Strength icon'
+  css:
+    component:
+      widgets/strength/strength.css: {}
+
+larges:
+  widget_label: 'Large stars icon'
+  css:
+    component:
+      widgets/star/large.css: {}
+
+smalls:
+  widget_label: 'Small stars icon'
+  css:
+    component:
+      widgets/star/small.css: {}
+
+greys:
+  widget_label: 'Grey stars icon'
+  css:
+    component:
+      widgets/star/grey.css: {}

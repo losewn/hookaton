@@ -1,0 +1,13 @@
+uuid: a4357815-3065-4820-b7e9-8b299989f01d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: tWOIjSMobEWOFZddMkNqb9JySbOVwE1diC6NRqcfLTk
+id: comment_unpublish_action
+label: 'Зняти з публікації коментар'
+type: comment
+plugin: 'entity:unpublish_action:comment'
+configuration: {  }

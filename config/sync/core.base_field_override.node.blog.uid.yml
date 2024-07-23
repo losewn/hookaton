@@ -1,0 +1,20 @@
+uuid: 20f81468-a541-4af3-814c-e1fddd68f1f1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.blog
+id: node.blog.uid
+field_name: uid
+entity_type: node
+bundle: blog
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

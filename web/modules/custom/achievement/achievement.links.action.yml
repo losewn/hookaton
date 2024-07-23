@@ -1,0 +1,11 @@
+achievement.achievement_rule.add_form:
+  route_name: entity.achievement_rule.add_form
+  title: 'Add achievement rule'
+  appears_on:
+    - entity.achievement_rule.collection
+
+achievement.badge.add_form:
+  route_name: entity.badge.add_form
+  title: 'Add badge'
+  appears_on:
+    - entity.badge.collection

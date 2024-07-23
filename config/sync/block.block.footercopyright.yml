@@ -1,0 +1,29 @@
+uuid: 6d056d46-beae-49b7-8f01-fcb2a8f6b7ea
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:72520f37-4adf-4da2-b89b-677f822c391d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: 'col-lg-6 col-md-6'
+id: footercopyright
+theme: webhome_default
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:72520f37-4adf-4da2-b89b-677f822c391d'
+settings:
+  id: 'block_content:72520f37-4adf-4da2-b89b-677f822c391d'
+  label: 'Footer copyright'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

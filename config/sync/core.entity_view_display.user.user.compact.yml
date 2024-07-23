@@ -1,0 +1,61 @@
+uuid: 50675447-fc4e-40b2-a638-5120ef410691
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.user_picture
+    - image.style.reviews_124x124_
+  module:
+    - blazy
+    - user
+_core:
+  default_config_hash: kD2TjItfNDKFw2CFJQfuv4Ys6qg3uYa4hCJYN2jreec
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: blazy
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      layout: ''
+      view_mode: ''
+      cache: 0
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: reviews_124x124_
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      breakpoints: {  }
+      current_view_mode: compact
+      fx: ''
+      grid_header: ''
+      icon: ''
+      sizes: ''
+      _uri: ''
+      skin: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_first_name: true
+  field_last_name: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

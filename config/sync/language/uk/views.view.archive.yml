@@ -1,0 +1,10 @@
+display:
+  default:
+    display_title: Базово
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Елементів на сторінку'
+  block_1:
+    display_title: Блок

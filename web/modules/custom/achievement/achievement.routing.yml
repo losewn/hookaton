@@ -1,0 +1,15 @@
+entity.achievement_rule.settings:
+  path: 'admin/structure/achievement-rule'
+  defaults:
+    _form: '\Drupal\achievement\Form\AchievementRuleSettingsForm'
+    _title: 'Achievement Rule'
+  requirements:
+    _permission: 'administer achievement rule'
+
+entity.badge.settings:
+  path: 'admin/structure/badge'
+  defaults:
+    _form: '\Drupal\achievement\Form\BadgeSettingsForm'
+    _title: 'Badge'
+  requirements:
+    _permission: 'administer badge'

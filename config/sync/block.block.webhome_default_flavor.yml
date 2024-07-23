@@ -1,0 +1,28 @@
+uuid: de77be5c-d819-4497-9f46-0731e01c3b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.flavor
+  module:
+    - facets
+    - system
+  theme:
+    - webhome_default
+id: webhome_default_flavor
+theme: webhome_default
+region: header
+weight: -9
+provider: null
+plugin: 'facet_block:flavor'
+settings:
+  id: 'facet_block:flavor'
+  label: Flavor
+  label_display: visible
+  provider: facets
+  block_id: flavor
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

@@ -1,0 +1,22 @@
+uuid: 2da6b74f-6c1e-487f-b75b-f5d04e6d96ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webhome_default
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: webhome_default_messages
+theme: webhome_default
+region: content
+weight: -9
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

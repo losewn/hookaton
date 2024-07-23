@@ -1,0 +1,29 @@
+uuid: d6b64136-ae49-4091-b75c-d3c73d91e2aa
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject_image
+    - media.type.image
+    - node.type.blog
+id: node.blog.field_subject_image
+field_name: field_subject_image
+entity_type: node
+bundle: blog
+label: Зображення
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

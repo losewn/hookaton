@@ -1,0 +1,21 @@
+uuid: 4592ee62-9ea6-4fd4-b1d3-0ed59deb5310
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - hookaton_olivero
+id: searchform_2
+theme: hookaton_olivero
+region: primary_menu
+weight: -11
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

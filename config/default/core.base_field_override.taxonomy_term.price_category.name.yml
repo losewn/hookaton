@@ -1,0 +1,18 @@
+uuid: 210a6c99-aff8-434f-8e4d-8eb835356b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.price_category
+id: taxonomy_term.price_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: price_category
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

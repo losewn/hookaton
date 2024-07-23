@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: uk
+uuid: fbd3e655-7a75-4a9f-92cc-256fa534ec8d
+name: hookaton
+mail: losewn95@gmail.com
+slogan: ''
+page:
+  403: /node/190
+  404: /node/191
+  front: /node/189
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: uk
+mail_notification: ''

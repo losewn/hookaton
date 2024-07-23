@@ -1,0 +1,25 @@
+uuid: dd48f057-49c0-4e1b-9819-cfa69a0fcdc4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.advantages.field_item
+    - paragraphs.paragraphs_type.advantages
+  module:
+    - entity_reference_revisions
+id: paragraph.advantages.default
+targetEntityType: paragraph
+bundle: advantages
+mode: default
+content:
+  field_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

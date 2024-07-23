@@ -1,0 +1,300 @@
+/**
+ * @file
+ * Visual styles for fields.
+ */
+
+@import "../base/variables.pcss.css";
+
+.field:not(:last-child) {
+  margin-block-end: var(--sp2);
+}
+
+.node--view-mode-teaser .field {
+  margin-block-end: var(--sp);
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+
+  @media (--lg) {
+    margin-block-end: var(--sp2);
+  }
+}
+
+.field__label {
+  font-weight: bold;
+}
+
+.field--label-inline .field__label,
+.field--label-inline .field__items {
+  float: inline-start;
+}
+
+.field--label-inline .field__label,
+.field--label-inline > .field__item,
+.field--label-inline .field__items {
+  padding-inline-end: 0.5em;
+}
+
+.field--label-inline .field__label::after {
+  content: ":";
+}
+
+.node--type-subject .subject__properties-item .field--label-inline {
+  display: grid;
+  width: 100%;
+  grid-template: 1fr / 1fr 1fr;
+
+  & .field__label,
+  & .field__item,
+  & .field__items {
+     padding: 0;
+    }
+
+  & .field__items{
+  align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+
+      & .field__item {
+        position: relative;
+
+  &:after {
+  content: ',';
+  padding-right: 3px;
+   }
+
+   &:last-child:after {
+  content: none;
+    }
+        }
+  }
+
+& .field__item {
+   color: var(--color--black);
+   font-family: var(--font-serif);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: var(--line-height-s2);
+    display: flex;
+    align-items: center;
+ }
+
+  & .field__label {
+  align-items: center;
+      color: var(--color--black);
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: var(--line-height-l);
+      display: flex;
+
+    &:after {
+       content: none;
+     }
+     &:before {
+        content: '';
+        display: block;
+        width: 52px;
+        height: 20px;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+      }
+  }
+}
+
+.node--type-subject .subject__properties-item.__item-country {
+  grid-column: 2 / 2;
+}
+
+.node__content_teaser .field--name-field-rate-flavor .fivestar-static-form-item .average-rating:before,
+.field--name-field-flavor .field__label:before {
+  background-image: url("../../images/subject/flavor.svg");
+}
+
+.node__content_teaser .field--name-field-rate-heat-resistance .fivestar-static-form-item .average-rating:before,
+.field--name-field-heat-resistance .field__label:before {
+  background-image: url("../../images/subject/heat.svg");
+}
+
+.node__content_teaser .field--name-field-rate-smokeness .fivestar-static-form-item .average-rating:before,
+.field--name-field-smokeness .field__label:before {
+  background-image: url("../../images/subject/smoke.svg");
+}
+
+.node__content_teaser .field--name-field-rate-strength .fivestar-static-form-item .average-rating:before,
+.field--name-field-strength .field__label:before {
+  background-image: url("../../images/subject/flex.svg");
+}
+
+.field--name-field-country .field__label:before {
+  background-image: url("../../images/subject/country.svg");
+}
+
+.field--name-field-mixed-strength {
+  flex-flow: row nowrap;
+  display: flex;
+
+& .field__item {
+  margin-right: var(--m17);
+    color: var(--color--black);
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: var(--line-height-s);
+    font-style: italic;
+    padding: 4px 24px 5px;
+    border: 1px solid var(--color--black);
+    border-radius: 12px;
+  }
+}
+
+.subject__rating {
+  & .field--name-field-rating .js-form-type-item {
+      display: grid;
+      grid-template: repeat(2, auto) / 1fr;
+      grid-row-gap: 20px;
+    }
+
+    & .field--name-field-rating .js-form-type-item .description {
+        order: -1;
+      }
+
+      & .total-votes {
+          color: var(--color--gray-20);
+          font-family: var(--font-serif);
+          font-size: var(--sp1-3);
+          font-weight: 700;
+          line-height: var(--sp2-5);
+          letter-spacing: -0.01em;
+          margin-left: var(--font-size-base);
+        }
+
+        & .average-rating {
+            color: var(--color--black);
+            font-family: var(--font-sans);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            font-size: 60px;
+            line-height: var(--line-height-xxl);
+          }
+
+}
+
+.flex-right-teaser {
+  position: relative;
+  padding-top: 39px;
+  display: flex;
+  justify-content: flex-end;
+
+& .fivestar-widget {
+  pointer-events: none;
+  }
+
+  & .fivestar-greys {
+  padding-bottom: 4px;
+    }
+
+  & .form-item__description {
+  margin: 0;
+    }
+
+  & .total-votes {
+    color: var(--color--black);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    line-height: var(--line-height-base);
+      display: flex;
+      justify-content: flex-end;
+
+  & span {
+      padding-right: 3px;
+    }
+  }
+
+    & .average-rating {
+        color: var(--color--black);
+        font-family: var(--font-sans);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-size: var(--sp2);
+        line-height: var(--sp2-5);
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+}
+
+.subjects__rate-properties .subjects__rate-item {
+  & .field--type-fivestar .fivestar-static-form-item {
+    & .fivestar-basic{
+        display: none;
+      }
+
+    & .total-votes {
+        display: none;
+      }
+    }
+
+  & .form-item__description {
+    margin: 0;
+  }
+
+  & .average-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color--gray-20);
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: var(--line-height-l);
+    }
+}
+
+.node__content_teaser {
+  display: grid;
+  grid-column-gap: 12px;
+  grid-template: 1fr / repeat(4, 1fr);
+
+  & .field--type-fivestar {
+    margin: 0;
+  }
+
+  & .field--type-fivestar .fivestar-static-form-item {
+    & .fivestar-basic{
+      display: none;
+    }
+
+    & .total-votes {
+      display: none;
+    }
+
+  & .average-rating {
+    display: flex;
+    align-items: center;
+    color: var(--color--gray-20);
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 14.45px;
+    line-height: 21.68px;
+
+    &:before {
+       content: '';
+       display: block;
+       width: 15px;
+       height: 15px;
+       pointer-events: none;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: contain;
+      margin-right: 7px;
+     }
+
+    }
+}
+
+}

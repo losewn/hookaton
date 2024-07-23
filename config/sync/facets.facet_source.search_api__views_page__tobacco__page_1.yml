@@ -1,0 +1,9 @@
+uuid: 66aad651-12fe-4eaa-8a71-d1f6e5006ec1
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__tobacco__page_1
+name: 'search_api:views_page__tobacco__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

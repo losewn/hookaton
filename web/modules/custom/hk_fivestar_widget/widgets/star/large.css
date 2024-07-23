@@ -1,0 +1,46 @@
+/* Static View-only Star Version */
+.fivestar-larges div.fivestar-widget-static .star {
+  width: 56px;
+  height: 53px;
+  background: url(large.svg) no-repeat 0 -57px;
+  background-size: contain;
+  margin-right: 16px;
+}
+
+.fivestar-larges div.fivestar-widget-static .star span.on {
+  background: url(large.svg) no-repeat 0 -57px;
+  background-size: cover;
+  margin-right: 16px;
+}
+
+.fivestar-larges div.fivestar-widget-static .star span.off {
+  background: url(large.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 16px;
+}
+
+/* Javascript Star Version */
+.fivestar-larges div.fivestar-widget .cancel,
+.fivestar-larges div.fivestar-widget .star {
+  width: 56px;
+  height: 53px;
+}
+.fivestar-larges div.fivestar-widget .cancel,
+.fivestar-larges div.fivestar-widget .cancel a {
+  background: url(cancel.png) no-repeat 0 0;
+}
+
+.fivestar-larges div.fivestar-widget .star,
+.fivestar-larges div.fivestar-widget .star a {
+  background: url(large.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 16px;
+}
+
+.fivestar-larges div.fivestar-widget div.on a {
+  background-position: 0 -57px;
+}
+.fivestar-larges div.fivestar-widget div.hover a,
+.fivestar-larges div.rating div a:hover {
+  background-position: 0 -57px;
+}

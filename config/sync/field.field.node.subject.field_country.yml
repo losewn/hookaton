@@ -1,0 +1,29 @@
+uuid: afb210c4-17e7-4260-ba02-2d8f1bc0832d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.subject
+    - taxonomy.vocabulary.country
+id: node.subject.field_country
+field_name: field_country
+entity_type: node
+bundle: subject
+label: Country
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

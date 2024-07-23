@@ -1,0 +1,29 @@
+uuid: 790be3eb-d5d7-4397-98eb-37747bacba9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mixed_strength
+    - node.type.subject
+    - taxonomy.vocabulary.fortress
+id: node.subject.field_mixed_strength
+field_name: field_mixed_strength
+entity_type: node
+bundle: subject
+label: 'Mixed strength'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fortress: fortress
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

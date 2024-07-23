@@ -1,0 +1,28 @@
+uuid: 2b9185ff-bb4b-43cd-bb3c-1815a699f3b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.price_category
+  module:
+    - facets
+    - system
+  theme:
+    - hookaton_olivero
+id: pricecategory
+theme: hookaton_olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:price_category'
+settings:
+  id: 'facet_block:price_category'
+  label: 'Price category'
+  label_display: visible
+  provider: facets
+  block_id: pricecategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

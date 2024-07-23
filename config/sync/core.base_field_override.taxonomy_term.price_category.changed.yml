@@ -1,0 +1,18 @@
+uuid: c1783ba3-4a68-4549-9e35-2e7c4213d781
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.price_category
+id: taxonomy_term.price_category.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: price_category
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

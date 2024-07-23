@@ -1,0 +1,18 @@
+uuid: 13f97ba9-3687-4ff1-88c4-18153f3e6932
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hardness
+id: taxonomy_term.hardness.name
+field_name: name
+entity_type: taxonomy_term
+bundle: hardness
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

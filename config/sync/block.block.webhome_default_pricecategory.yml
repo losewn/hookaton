@@ -1,0 +1,28 @@
+uuid: db135141-f903-44b3-871b-24a2d7972ab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.price_category
+  module:
+    - facets
+    - system
+  theme:
+    - webhome_default
+id: webhome_default_pricecategory
+theme: webhome_default
+region: header
+weight: -5
+provider: null
+plugin: 'facet_block:price_category'
+settings:
+  id: 'facet_block:price_category'
+  label: 'Price category'
+  label_display: visible
+  provider: facets
+  block_id: pricecategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

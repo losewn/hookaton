@@ -1,0 +1,28 @@
+uuid: 9beac9b0-d805-48d6-8b75-f73829a71e2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.manufacturer
+  module:
+    - facets
+    - system
+  theme:
+    - hookaton_olivero
+id: manufacturer
+theme: hookaton_olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:manufacturer'
+settings:
+  id: 'facet_block:manufacturer'
+  label: Manufacturer
+  label_display: visible
+  provider: facets
+  block_id: manufacturer
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

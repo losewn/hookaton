@@ -1,0 +1,20 @@
+uuid: 49edbbfb-fb1e-4bc4-a67d-3c1e0c8d4e2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hardness
+  module:
+    - path
+id: taxonomy_term.hardness.path
+field_name: path
+entity_type: taxonomy_term
+bundle: hardness
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,28 @@
+uuid: 60aa1d01-4c3d-4a62-b1da-b2096016ceb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.manufacturer
+  module:
+    - facets
+    - system
+  theme:
+    - webhome_default
+id: webhome_default_manufacturer
+theme: webhome_default
+region: header
+weight: -6
+provider: null
+plugin: 'facet_block:manufacturer'
+settings:
+  id: 'facet_block:manufacturer'
+  label: Manufacturer
+  label_display: visible
+  provider: facets
+  block_id: manufacturer
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

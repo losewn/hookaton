@@ -1,0 +1,101 @@
+uuid: 78eff336-1856-4fe4-9670-131b88e4c09a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_with_teaser.field_image
+    - field.field.paragraph.banner_with_teaser.field_large_title
+    - field.field.paragraph.banner_with_teaser.field_link
+    - field.field.paragraph.banner_with_teaser.field_subject
+    - field.field.paragraph.banner_with_teaser.field_title
+    - image.style.banner_h_563_
+    - paragraphs.paragraphs_type.banner_with_teaser
+  module:
+    - blazy
+    - link
+id: paragraph.banner_with_teaser.default
+targetEntityType: paragraph
+bundle: banner_with_teaser
+mode: default
+content:
+  field_image:
+    type: blazy_media
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: default
+      cache: 0
+      current_view_mode: default
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: banner_h_563_
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_large_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subject:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

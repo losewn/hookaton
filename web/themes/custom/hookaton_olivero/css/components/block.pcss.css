@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Block styling.
+ */
+
+@import "../base/variables.pcss.css";
+
+.block__title {
+  margin-block: 0 var(--sp);
+  letter-spacing: 0.02em;
+  color: var(--color--gray-20);
+  font-size: var(--font-size-s);
+  line-height: var(--sp);
+}
+
+.site-footer .block__title {
+  color: var(--color--gray-50);
+}
+
+.block-views-blockmost-popular-block-1 .block__title{
+  letter-spacing: -0.02em;
+  color: var(--color--gray-0);
+  font-size: var(--sp2);
+  line-height: var(--sp3);
+  font-family: var(--font-sans);
+  margin-block: 0 var(--sp2);
+}
+

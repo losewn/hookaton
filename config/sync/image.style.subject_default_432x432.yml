@@ -1,0 +1,23 @@
+uuid: 354d5799-8c62-4a96-9509-f9d392eac2ac
+langcode: en
+status: true
+dependencies: {  }
+name: subject_default_432x432
+label: 'Subject default (432x432)'
+effects:
+  ee4fcd79-8d58-4ff5-9fab-854569765e1e:
+    uuid: ee4fcd79-8d58-4ff5-9fab-854569765e1e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 864
+      height: 864
+      anchor: center-center
+  bd3e23ba-7722-4b5f-a373-90fd86d8b74a:
+    uuid: bd3e23ba-7722-4b5f-a373-90fd86d8b74a
+    id: image_scale
+    weight: 2
+    data:
+      width: 432
+      height: 432
+      upscale: true

@@ -1,0 +1,33 @@
+uuid: 743a2bb0-e2c7-4732-ba2a-5fee259254a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.short_banner.field_image
+    - field.field.paragraph.short_banner.field_title
+    - paragraphs.paragraphs_type.short_banner
+  module:
+    - media_library
+id: paragraph.short_banner.default
+targetEntityType: paragraph
+bundle: short_banner
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

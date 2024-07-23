@@ -1,0 +1,20 @@
+uuid: 4d18dc60-d58f-4e50-925c-d6cb9a0d65be
+langcode: en
+status: true
+dependencies:
+  module:
+    - fivestar
+    - node
+id: node.field_rate_strength
+field_name: field_rate_strength
+entity_type: node
+type: fivestar
+settings:
+  vote_type: strength_vote
+module: fivestar
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

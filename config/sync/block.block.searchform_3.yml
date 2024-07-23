@@ -1,0 +1,25 @@
+uuid: 2371570b-b62d-4018-a6e3-337378635222
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: 'col-xl-5 col-md-9'
+id: searchform_3
+theme: webhome_default
+region: header
+weight: -12
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

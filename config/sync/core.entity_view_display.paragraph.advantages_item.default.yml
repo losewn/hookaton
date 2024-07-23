@@ -1,0 +1,41 @@
+uuid: 917a4c3f-b94a-47d7-8c67-4a75e6cd4628
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.advantages_item.field_media_image
+    - field.field.paragraph.advantages_item.field_subtitle
+    - field.field.paragraph.advantages_item.field_title
+    - paragraphs.paragraphs_type.advantages_item
+id: paragraph.advantages_item.default
+targetEntityType: paragraph
+bundle: advantages_item
+mode: default
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

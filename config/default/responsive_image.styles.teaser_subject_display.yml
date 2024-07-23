@@ -1,0 +1,23 @@
+uuid: 184be864-2221-4167-a3c0-e550c6ea7f41
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.subject_teaser_h_245_
+  theme:
+    - hookaton_olivero
+id: teaser_subject_display
+label: 'Teaser subject display'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: subject_teaser_h_245_
+    breakpoint_id: hookaton_olivero.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: subject_teaser_h_245_
+    breakpoint_id: hookaton_olivero.sm
+    multiplier: 1x
+breakpoint_group: hookaton_olivero
+fallback_image_style: '_original image_'

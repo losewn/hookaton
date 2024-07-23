@@ -1,0 +1,20 @@
+uuid: fb20baa3-809f-4f5b-a492-cfb677ad08ca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webhome_default
+_core:
+  default_config_hash: sDmKoL9ejxB_fvD_qmgOHa8HN3X9AIsbud2xK8brMiI
+id: webhome_default_primary_admin_actions
+theme: webhome_default
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

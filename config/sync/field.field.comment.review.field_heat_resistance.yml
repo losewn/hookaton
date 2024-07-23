@@ -1,0 +1,29 @@
+uuid: 63f14344-5892-4699-9a2a-b3f59b4974d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - field.storage.comment.field_heat_resistance
+  module:
+    - fivestar
+id: comment.review.field_heat_resistance
+field_name: field_heat_resistance
+entity_type: comment
+bundle: review
+label: 'Heat Resistance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: editing
+  enable_voting_target: true
+  target_bridge_field: entity_id
+  target_fivestar_field: field_rate_heat_resistance
+field_type: fivestar

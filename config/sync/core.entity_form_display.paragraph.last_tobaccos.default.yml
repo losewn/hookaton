@@ -1,0 +1,23 @@
+uuid: 63331aa3-1ac8-4733-9557-d61cee1ad393
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.last_tobaccos.field_views
+    - paragraphs.paragraphs_type.last_tobaccos
+  module:
+    - viewfield
+id: paragraph.last_tobaccos.default
+targetEntityType: paragraph
+bundle: last_tobaccos
+mode: default
+content:
+  field_views:
+    type: viewfield_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

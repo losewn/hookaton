@@ -1,0 +1,20 @@
+uuid: 8377f198-c119-43bf-854b-3be9c1e80213
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hookaton_olivero
+_core:
+  default_config_hash: sDmKoL9ejxB_fvD_qmgOHa8HN3X9AIsbud2xK8brMiI
+id: hookaton_olivero_primary_admin_actions
+theme: hookaton_olivero
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

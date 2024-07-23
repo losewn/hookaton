@@ -1,0 +1,33 @@
+uuid: ad87f439-17cd-424d-bbb4-5a6f7712919b
+langcode: en
+status: true
+dependencies:
+  module:
+    - hookaton_core
+    - system
+    - user
+  theme:
+    - hookaton_olivero
+id: blockauthtosubjectpage
+theme: hookaton_olivero
+region: content_below
+weight: 0
+provider: null
+plugin: auth_to_anonym_in_subject_block
+settings:
+  id: auth_to_anonym_in_subject_block
+  label: 'Block auth to subject page'
+  label_display: '0'
+  provider: hookaton_core
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+  request_path:
+    id: request_path
+    negate: false
+    pages: '*/tobacco/*'

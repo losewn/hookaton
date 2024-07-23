@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Module's main file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function achievement_theme(): array {
+  return [
+    'badge' => [
+      'template' => 'badge',
+      'file' => 'includes/achievement.theme.inc',
+      'render element' => 'elements',
+    ],
+  ];
+}

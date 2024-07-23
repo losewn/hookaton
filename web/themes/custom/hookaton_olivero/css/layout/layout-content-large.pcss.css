@@ -1,0 +1,55 @@
+/**
+ * @file
+ * Grid system definition for the content large layout.
+ */
+
+@import "../base/variables.pcss.css";
+
+.layout--content-large,
+.layout--pass--content-large > * {
+  grid-column: 1 / 7;
+  width: 100%;
+
+  @media (--grid-md) {
+    grid-column: 2 / 14;
+  }
+
+  /*@media (--lg) {*/
+    /*grid-column: 3 / 13;*/
+  /*}*/
+}
+
+.layout--pass--content-large > *,
+.layout--content-large {
+  & .layout--content-large,
+  & .layout--pass--content-large > * {
+    @media (--grid-md) {
+      grid-column: 1 / 13;
+    }
+
+    @media (--lg) {
+      grid-column: 1 / 11;
+    }
+  }
+}
+
+.layout--content-large-row-8,
+.layout--pass--content-large-row-8 > *{
+  grid-column: 1 / 9;
+  width: 100%;
+  position: relative;
+}
+
+.layout--content-large-row-9,
+.layout--pass--content-large-row-9 > *{
+  grid-column: 1 / 10;
+  width: 100%;
+  position: relative;
+}
+
+.layout--content-large-row-4,
+.layout--pass--content-large-row-4 > *{
+  grid-column: 10 / 13;
+  width: 100%;
+  position: relative;
+}

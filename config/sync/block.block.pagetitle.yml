@@ -1,0 +1,18 @@
+uuid: f33617d9-0930-473f-8f76-4ed953564e61
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webhome_default
+id: pagetitle
+theme: webhome_default
+region: content
+weight: -12
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

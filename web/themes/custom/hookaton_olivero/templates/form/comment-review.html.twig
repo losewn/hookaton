@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+<form{{ attributes }}>
+  {{ form.group_review_and_comment }}
+  <div class="layout layout--twocol-section layout--twocol-section--68-32">
+    <div class="layout__region layout__region--first">
+      {{ form.group_stars }}
+    </div>
+    <div class="layout__region layout__region--second layout-photos-actions">
+      {{ form|without('group_review_and_comment', 'group_stars', 'actions') }}
+      {{ form.actions }}
+    </div>
+  </div>
+</form>

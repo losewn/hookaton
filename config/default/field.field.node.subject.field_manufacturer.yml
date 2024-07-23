@@ -1,0 +1,29 @@
+uuid: 26fefce1-233b-4091-b041-bf45ffab3a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manufacturer
+    - node.type.subject
+    - taxonomy.vocabulary.manufacturer
+id: node.subject.field_manufacturer
+field_name: field_manufacturer
+entity_type: node
+bundle: subject
+label: Manufacturer
+description: 'Select appropriate manufacturer from the list or create one.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      manufacturer: manufacturer
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

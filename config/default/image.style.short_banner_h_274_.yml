@@ -1,0 +1,15 @@
+uuid: 92e6c737-9905-425e-986c-aca6357d9215
+langcode: en
+status: true
+dependencies: {  }
+name: short_banner_h_274_
+label: 'Short banner (h-274)'
+effects:
+  6de28adb-212c-4daa-b4ba-d9d95779e8a0:
+    uuid: 6de28adb-212c-4daa-b4ba-d9d95779e8a0
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 274
+      upscale: false

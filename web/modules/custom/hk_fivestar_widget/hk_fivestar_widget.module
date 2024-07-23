@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * A test module which provides two rating widgetes for use by Fivestar.
+ */
+
+/**
+ * Implements hook_fivestar_widgets().
+ */
+function hk_fivestar_widget_fivestar_widgets() {
+  // Widgets defined by this module.
+  $widgets = [
+    'flavor' => [
+      'library' => 'hk_fivestar_widget/flavor',
+      'label' => t('Flavor icon'),
+    ],
+    'smokeness' => [
+      'library' => 'hk_fivestar_widget/smokeness',
+      'label' => t('Smokeness icon'),
+    ],
+    'heat' => [
+      'library' => 'hk_fivestar_widget/heat',
+      'label' => t('Heat Resistance icon'),
+    ],
+    'strength' => [
+      'library' => 'hk_fivestar_widget/strength',
+      'label' => t('Strength icon'),
+    ],
+    'larges' => [
+      'library' => 'hk_fivestar_widget/larges',
+      'label' => t('Large star icon'),
+    ],
+    'smalls' => [
+      'library' => 'hk_fivestar_widget/smalls',
+      'label' => t('Small star icon'),
+    ],
+    'greys' => [
+      'library' => 'hk_fivestar_widget/greys',
+      'label' => t('Grey star icon'),
+    ],
+  ];
+
+  return $widgets;
+}
+
+/**
+ * Implements hook_fivestar_widgets_alter().
+ */
+function hk_fivestar_widget_fivestar_widgets_alter(&$widgets) {
+  // Change the label of the 'basic' widget to be 'Altered'.
+  $widgets['basic']['label'] = t('Altered');
+}

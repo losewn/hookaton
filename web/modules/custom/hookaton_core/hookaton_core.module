@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function hookaton_core_theme() {
+  return [
+    'auth_to_anonym_in_subject_block' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

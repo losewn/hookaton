@@ -1,0 +1,23 @@
+uuid: 19ce7d18-4743-4a0f-9128-2d87fb5f642a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - field.storage.comment.field_like_vud
+  module:
+    - vud
+id: comment.review.field_like_vud
+field_name: field_like_vud
+entity_type: comment
+bundle: review
+label: 'Like VUD'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: vote_up_down_field

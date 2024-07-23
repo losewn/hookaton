@@ -1,0 +1,2 @@
+sendinblue_on: 1
+sendinblue_smtp_details: '{"userName":"sales@zanzarra.com","relay":"smtp-relay.sendinblue.com","port":587}'

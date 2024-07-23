@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Елементів на сторінку'
+      fields:
+        value:
+          label: Значення
+  admin_page:
+    display_options:
+      fields:
+        value:
+          label: Значення

@@ -1,0 +1,29 @@
+uuid: c4e20a6a-201e-4126-bab6-1a1e5070de37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rate_heat_resistance
+    - node.type.subject
+  module:
+    - fivestar
+id: node.subject.field_rate_heat_resistance
+field_name: field_rate_heat_resistance
+entity_type: node
+bundle: subject
+label: 'Heat Resistance'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: editing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar

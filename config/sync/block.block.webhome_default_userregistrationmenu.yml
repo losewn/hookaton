@@ -1,0 +1,37 @@
+uuid: 855f792b-f562-4a20-8dea-59bfbe6c5993
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-registration-menu
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: 'col-lg-3 col-md-3'
+id: webhome_default_userregistrationmenu
+theme: webhome_default
+region: subheader
+weight: -9
+provider: null
+plugin: 'system_menu_block:user-registration-menu'
+settings:
+  id: 'system_menu_block:user-registration-menu'
+  label: 'User registration menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

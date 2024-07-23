@@ -1,0 +1,18 @@
+uuid: 3454d499-9ea1-4286-a09f-79e38daafbad
+langcode: uk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.short_banner
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.short_banner
+target_entity_type_id: paragraph
+target_bundle: short_banner
+default_langcode: site_default
+language_alterable: false

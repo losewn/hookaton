@@ -1,0 +1,38 @@
+uuid: c0a1571a-873b-45a8-9c6a-a03c0e6d5ae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.account_votes
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - webhome_default
+id: webhome_default_views_block__account_votes_block_1
+theme: webhome_default
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:account_votes-block_1'
+settings:
+  id: 'views_block:account_votes-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

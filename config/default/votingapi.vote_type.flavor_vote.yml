@@ -1,0 +1,8 @@
+uuid: 1bd54e17-574a-4b97-909d-94740055e520
+langcode: en
+status: true
+dependencies: {  }
+id: flavor_vote
+label: 'Flavor vote'
+value_type: points
+description: ''

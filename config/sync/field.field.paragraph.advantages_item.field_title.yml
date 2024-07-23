@@ -1,0 +1,19 @@
+uuid: f7148cf7-fbb9-4c4d-8983-ec72529d4f8f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.advantages_item
+id: paragraph.advantages_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: advantages_item
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

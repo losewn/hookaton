@@ -1,0 +1,45 @@
+uuid: 041b59bd-736a-4a94-b5dc-3c9dc878a47c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_block.field_media_image
+    - field.field.paragraph.two_block.field_text
+    - field.field.paragraph.two_block.field_title
+    - paragraphs.paragraphs_type.two_block
+  module:
+    - media_library
+    - text
+id: paragraph.two_block.default
+targetEntityType: paragraph
+bundle: two_block
+mode: default
+content:
+  field_media_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,8 @@
+uuid: d4d2d66e-de1b-48fe-8086-539c8805df43
+langcode: en
+status: true
+dependencies: {  }
+name: Flavor
+vid: flavor
+description: 'Tobacco flavors'
+weight: 0

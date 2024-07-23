@@ -1,0 +1,28 @@
+uuid: 4cce23a8-a82c-4bc7-a4ac-3579e1eb6637
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.hardness
+  module:
+    - facets
+    - system
+  theme:
+    - webhome_default
+id: webhome_default_hardness
+theme: webhome_default
+region: header
+weight: -8
+provider: null
+plugin: 'facet_block:hardness'
+settings:
+  id: 'facet_block:hardness'
+  label: Hardness
+  label_display: visible
+  provider: facets
+  block_id: hardness
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/tobaccos*'

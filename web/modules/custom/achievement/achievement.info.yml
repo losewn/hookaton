@@ -1,0 +1,8 @@
+name: 'Achievement'
+description: 'Configure achievements for events.'
+type: module
+core_version_requirement: ^9
+package: Custom
+dependencies:
+  - drupal:text
+  - user

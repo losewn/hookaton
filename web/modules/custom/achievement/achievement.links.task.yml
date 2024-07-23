@@ -1,0 +1,45 @@
+entity.achievement_rule.settings:
+  title: Settings
+  route_name: entity.achievement_rule.settings
+  base_route: entity.achievement_rule.settings
+entity.achievement_rule.view:
+  title: View
+  route_name: entity.achievement_rule.canonical
+  base_route: entity.achievement_rule.canonical
+entity.achievement_rule.edit_form:
+  title: Edit
+  route_name: entity.achievement_rule.edit_form
+  base_route: entity.achievement_rule.canonical
+entity.achievement_rule.delete_form:
+  title: Delete
+  route_name: entity.achievement_rule.delete_form
+  base_route: entity.achievement_rule.canonical
+  weight: 10
+entity.achievement_rule.collection:
+  title: Achievement Rule
+  route_name: entity.achievement_rule.collection
+  base_route: system.admin_content
+  weight: 20
+
+entity.badge.settings:
+  title: Settings
+  route_name: entity.badge.settings
+  base_route: entity.badge.settings
+entity.badge.view:
+  title: View
+  route_name: entity.badge.canonical
+  base_route: entity.badge.canonical
+entity.badge.edit_form:
+  title: Edit
+  route_name: entity.badge.edit_form
+  base_route: entity.badge.canonical
+entity.badge.delete_form:
+  title: Delete
+  route_name: entity.badge.delete_form
+  base_route: entity.badge.canonical
+  weight: 10
+entity.badge.collection:
+  title: Badge
+  route_name: entity.badge.collection
+  base_route: system.admin_content
+  weight: 20

@@ -1,0 +1,49 @@
+/* Static View-only Star Version */
+.fivestar-greys div.fivestar-widget-static .star {
+  width: 16px;
+  height: 15px;
+  background: url(grey.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.fivestar-greys div.fivestar-widget-static .star:last-child {
+  margin-right: 0;
+}
+
+.fivestar-greys div.fivestar-widget-static .star span.on {
+  background: url(grey.svg) no-repeat 0 -18px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.fivestar-greys div.fivestar-widget-static .star span.off {
+  background: url(grey.svg) no-repeat 0 0;
+  background-size: cover;
+}
+
+/* Javascript Star Version */
+.fivestar-greys div.fivestar-widget .cancel,
+.fivestar-greys div.fivestar-widget .star {
+  width: 16px;
+  height: 15px;
+}
+.fivestar-greys div.fivestar-widget .cancel,
+.fivestar-greys div.fivestar-widget .cancel a {
+  background: url(cancel.png) no-repeat 0 0;
+}
+
+.fivestar-greys div.fivestar-widget .star,
+.fivestar-greys div.fivestar-widget .star a {
+  background: url(grey.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.fivestar-greys div.fivestar-widget div.on a {
+  background-position: 0 -18px;
+}
+.fivestar-greys div.fivestar-widget div.hover a,
+.fivestar-greys div.rating div a:hover {
+  background-position: 0 0;
+}

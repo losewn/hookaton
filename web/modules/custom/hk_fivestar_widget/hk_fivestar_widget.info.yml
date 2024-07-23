@@ -1,0 +1,7 @@
+name: Fivestar widget custom icons
+description: Custom module for new widgets.
+type: module
+core_version_requirement: ^9
+package: Custom
+dependencies:
+  - fivestar:fivestar

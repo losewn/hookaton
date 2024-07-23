@@ -1,0 +1,59 @@
+uuid: 560e804d-4a1b-461d-8e75-4ff73ccf7db5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_views
+    - paragraphs.paragraphs_type.last_tobaccos
+    - views.view.frontpage
+  module:
+    - viewfield
+id: paragraph.last_tobaccos.field_views
+field_name: field_views
+entity_type: paragraph
+bundle: last_tobaccos
+label: Views
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: adee44fd-ebae-43b3-bdab-5a5f65465781
+    display_id: block_1
+    arguments: ''
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    account_votes: '0'
+    blog: '0'
+    block_content: '0'
+    authmap: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_library: '0'
+    most_popular: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    taxonomy_term: '0'
+    votingapi_votes: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+    content: '0'
+    comment: '0'
+    tobacco: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: viewfield

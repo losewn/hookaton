@@ -1,0 +1,27 @@
+administer achievement rule:
+  title: 'Administer achievement rule settings'
+  restrict access: true
+access achievement rule overview:
+  title: 'Access achievement rule overview page'
+delete achievement rule:
+  title: Delete achievement rule
+create achievement rule:
+  title: Create achievement rule
+view achievement rule:
+  title: View achievement rule
+edit achievement rule:
+  title: Edit achievement rule
+
+administer badge:
+  title: 'Administer badge settings'
+  restrict access: true
+access badge overview:
+  title: 'Access badge overview page'
+delete badge:
+  title: Delete badge
+create badge:
+  title: Create badge
+view badge:
+  title: View badge
+edit badge:
+  title: Edit badge

@@ -1,0 +1,20 @@
+display:
+  default:
+    display_title: Базово
+    display_options:
+      fields:
+        nothing:
+          admin_label: Іконка
+        type:
+          label: Тип
+        name:
+          label: Користувач
+        link:
+          label: Операції
+      exposed_form:
+        options:
+          submit_button: Фільтр
+      filters:
+        type:
+          expose:
+            label: Тип

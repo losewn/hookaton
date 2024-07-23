@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: u2wQ4ot4t4xKOJKWxoKwelgzx8j37Ve5SQ0qqxtVXlQ
+langcode: uk
+maxlength_block_class_field: 255
+field_type: multiple_textfields
+default_case: standard
+block_classes_stored: '{"col-lg-6":"col-lg-6","col-md-6":"col-md-6","col-lg-3":"col-lg-3","col-md-3":"col-md-3","col-lg-5":"col-lg-5","col-md-5":"col-md-5","col-lg-4":"col-lg-4","col-md-4":"col-md-4","col-lg-1":"col-lg-1","col-md-1":"col-md-1","col-lg-8":"col-lg-8","col-md-8":"col-md-8","col-lg-9":"col-lg-9","col-md-9":"col-md-9","col-lg-2":"col-lg-2","col-md-2":"col-md-2","add_new_tobacco_block":"add_new_tobacco_block","header_main_nav":"header_main_nav","col-xl-3":"col-xl-3","d-flex":"d-flex","align-items-center":"align-items-center","justify-content-center":"justify-content-center","col-xl-5":"col-xl-5","col-9":"col-9","col-3":"col-3"}'
+enable_attributes: true
+enable_auto_complete: true
+qty_classes_per_block: 10
+items_per_page: 50
+enable_special_chars: false
+qty_attributes_per_block: 10
+enable_id_replacement: true
+weight_attributes: 0
+weight_class: 0
+weight_id: 0
+filter_html_clean_css_identifier: ''
+maxlength_attributes: 0
+maxlength_id: 255
+attribute_keys_stored: '[]'
+attribute_value_stored: '[]'
+attributes_inline: '[]'

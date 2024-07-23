@@ -1,0 +1,39 @@
+uuid: f8453966-ed15-46e4-896a-2cd2551b0a83
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e37eedea-5242-497a-91cc-240849d8e74f'
+  module:
+    - block_class
+    - block_content
+    - user
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: add_new_tobacco_block
+id: wanttoaddanewtobacco
+theme: webhome_default
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:e37eedea-5242-497a-91cc-240849d8e74f'
+settings:
+  id: 'block_content:e37eedea-5242-497a-91cc-240849d8e74f'
+  label: 'Want to add a new tobacco?'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

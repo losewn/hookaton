@@ -1,0 +1,29 @@
+uuid: 576b2d73-5a82-486b-a98b-e1f5120b0550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heat_resistance
+    - node.type.subject
+    - taxonomy.vocabulary.heat_resistance
+id: node.subject.field_heat_resistance
+field_name: field_heat_resistance
+entity_type: node
+bundle: subject
+label: 'Heat resistance'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      heat_resistance: heat_resistance
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

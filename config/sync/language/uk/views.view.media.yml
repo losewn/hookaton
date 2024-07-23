@@ -1,0 +1,22 @@
+display:
+  default:
+    display_title: Базово
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Дія
+        status:
+          label: Стан
+        operations:
+          label: Операції
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Елементів на сторінку'
+      exposed_form:
+        options:
+          submit_button: Фільтр
+      filters:
+        langcode:
+          expose:
+            label: Мова

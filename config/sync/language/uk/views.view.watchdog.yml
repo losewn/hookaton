@@ -1,0 +1,18 @@
+display:
+  default:
+    display_title: Базово
+    display_options:
+      fields:
+        nothing:
+          admin_label: Іконка
+        name:
+          label: Користувач
+        link:
+          label: Операції
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Елементів на сторінку'
+      exposed_form:
+        options:
+          submit_button: Фільтр

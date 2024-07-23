@@ -1,0 +1,17 @@
+uuid: 1ab765d4-6e98-4b14-8c88-aa07a79ed85d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: layout
+label: Layout
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      webhouse_fluid: 'WebHouse fluid (full width)'
+      webhouse_container: 'WebHouse container'

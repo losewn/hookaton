@@ -1,0 +1,22 @@
+uuid: 451d728a-0b84-4f9b-b65a-d4891d5ee006
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.heat_resistance
+id: taxonomy_term.heat_resistance.status
+field_name: status
+entity_type: taxonomy_term
+bundle: heat_resistance
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

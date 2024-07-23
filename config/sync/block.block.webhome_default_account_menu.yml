@@ -1,0 +1,31 @@
+uuid: 48af441d-fc98-4c55-9b99-2302d22eae57
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - system
+  theme:
+    - webhome_default
+third_party_settings:
+  block_class:
+    classes: 'col-lg-3 col-md-3 col-9'
+_core:
+  default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
+id: webhome_default_account_menu
+theme: webhome_default
+region: subheader
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

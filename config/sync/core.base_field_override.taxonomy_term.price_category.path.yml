@@ -1,0 +1,20 @@
+uuid: cee093c5-337e-4ffc-92aa-8510eb1bfabd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.price_category
+  module:
+    - path
+id: taxonomy_term.price_category.path
+field_name: path
+entity_type: taxonomy_term
+bundle: price_category
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,8 @@
+uuid: aa954606-3012-4acc-ac5a-ff19afde7d20
+langcode: en
+status: true
+dependencies: {  }
+name: Hardness
+vid: hardness
+description: 'Tobacco hardness'
+weight: 0

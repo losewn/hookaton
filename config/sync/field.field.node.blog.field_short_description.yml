@@ -1,0 +1,19 @@
+uuid: 5e017417-f1c7-4da1-8f64-e6c8d06c6252
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.blog
+id: node.blog.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: blog
+label: 'Short description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

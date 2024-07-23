@@ -1,0 +1,46 @@
+/* Static View-only Star Version */
+.fivestar-smokeness div.fivestar-widget-static .star {
+  width: 20px;
+  height: 20px;
+  background: url(smoke.svg) no-repeat 0 -48px;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.fivestar-smokeness div.fivestar-widget-static .star span.on {
+  background: url(smoke.svg) no-repeat 0 -24px;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.fivestar-smokeness div.fivestar-widget-static .star span.off {
+  background: url(smoke.svg) no-repeat 0 0;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+/* Javascript Star Version */
+.fivestar-smokeness div.fivestar-widget .cancel,
+.fivestar-smokeness div.fivestar-widget .star {
+  width: 20px;
+  height: 20px;
+}
+.fivestar-smokeness div.fivestar-widget .cancel,
+.fivestar-smokeness div.fivestar-widget .cancel a {
+  background: url(cancel.png) no-repeat 0 0;
+}
+
+.fivestar-smokeness div.fivestar-widget .star,
+.fivestar-smokeness div.fivestar-widget .star a {
+  background: url(smoke.svg) no-repeat 0 -48px;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.fivestar-smokeness div.fivestar-widget div.on a {
+  background-position: 0 -24px;
+}
+.fivestar-smokeness div.fivestar-widget div.hover a,
+.fivestar-smokeness div.rating div a:hover {
+  background-position: 0 0;
+}

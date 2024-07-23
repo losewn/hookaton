@@ -1,0 +1,20 @@
+uuid: 6c94ba60-ba1e-478e-b065-1d03199d155a
+langcode: en
+status: true
+dependencies: {  }
+id: all
+label: All
+severity_levels:
+  - 7
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0
+types: {  }
+enabled: true
+api_key: null
+channel_id: null
+domain: null

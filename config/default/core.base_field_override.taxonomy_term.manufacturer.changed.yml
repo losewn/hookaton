@@ -1,0 +1,18 @@
+uuid: 216554fa-c9b7-4d2b-8948-caf127beec32
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.manufacturer
+id: taxonomy_term.manufacturer.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: manufacturer
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

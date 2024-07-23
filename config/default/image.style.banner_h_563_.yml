@@ -1,0 +1,15 @@
+uuid: 1c3d1b17-5e43-4313-a621-9717dbcc2297
+langcode: en
+status: true
+dependencies: {  }
+name: banner_h_563_
+label: 'Banner (h-563)'
+effects:
+  7951b211-b2a0-4422-a98a-83181708e284:
+    uuid: 7951b211-b2a0-4422-a98a-83181708e284
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 563
+      upscale: false

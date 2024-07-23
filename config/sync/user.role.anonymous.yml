@@ -1,0 +1,22 @@
+uuid: c42bdd40-ea09-4128-b66c-963c36a70a5d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - comment
+    - contact
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Анонімний користувач'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'view media'

@@ -1,0 +1,29 @@
+uuid: 59d3a3e8-09e3-4d8f-8404-48ac4e2c7b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - field.storage.comment.field_flavor
+  module:
+    - fivestar
+id: comment.review.field_flavor
+field_name: field_flavor
+entity_type: comment
+bundle: review
+label: Flavor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: editing
+  enable_voting_target: true
+  target_bridge_field: entity_id
+  target_fivestar_field: field_rate_flavor
+field_type: fivestar

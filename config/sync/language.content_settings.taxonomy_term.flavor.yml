@@ -1,0 +1,18 @@
+uuid: a8b1f6c5-b616-49a4-a212-2165f3e533b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flavor
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.flavor
+target_entity_type_id: taxonomy_term
+target_bundle: flavor
+default_langcode: site_default
+language_alterable: true

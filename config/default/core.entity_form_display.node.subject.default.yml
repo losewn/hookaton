@@ -1,0 +1,220 @@
+uuid: 562efa2e-7dac-4cf9-a558-b11d20838eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subject.body
+    - field.field.node.subject.field_country
+    - field.field.node.subject.field_flavor
+    - field.field.node.subject.field_hardness
+    - field.field.node.subject.field_heat_resistance
+    - field.field.node.subject.field_manufacturer
+    - field.field.node.subject.field_mixed_strength
+    - field.field.node.subject.field_price_category
+    - field.field.node.subject.field_rate_flavor
+    - field.field.node.subject.field_rate_heat_resistance
+    - field.field.node.subject.field_rate_smokeness
+    - field.field.node.subject.field_rate_strength
+    - field.field.node.subject.field_rating
+    - field.field.node.subject.field_review
+    - field.field.node.subject.field_short_description
+    - field.field.node.subject.field_smokeness
+    - field.field.node.subject.field_strength
+    - field.field.node.subject.field_subject_image
+    - node.type.subject
+  module:
+    - comment
+    - media_library
+    - path
+    - text
+id: node.subject.default
+targetEntityType: node
+bundle: subject
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_country:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_flavor:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hardness:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heat_resistance:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_manufacturer:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mixed_strength:
+    type: options_buttons
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price_category:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_review:
+    type: comment_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_short_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_smokeness:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_strength:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subject_image:
+    type: media_library_widget
+    weight: 11
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_rate_flavor: true
+  field_rate_heat_resistance: true
+  field_rate_smokeness: true
+  field_rate_strength: true
+  field_rating: true

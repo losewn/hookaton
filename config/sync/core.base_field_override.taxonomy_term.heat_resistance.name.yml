@@ -1,0 +1,18 @@
+uuid: 8405c309-5fca-429c-8aab-8cefc634aa08
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.heat_resistance
+id: taxonomy_term.heat_resistance.name
+field_name: name
+entity_type: taxonomy_term
+bundle: heat_resistance
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

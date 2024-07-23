@@ -1,0 +1,8 @@
+uuid: ba1fdd00-9dbc-4920-bb84-72afb359c270
+langcode: en
+status: true
+dependencies: {  }
+id: smokeness_vote
+label: 'Smokeness vote'
+value_type: points
+description: ''

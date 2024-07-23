@@ -1,0 +1,29 @@
+uuid: 1780d782-b05a-426f-80e4-ccb0955e1ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strength
+    - node.type.subject
+    - taxonomy.vocabulary.strength
+id: node.subject.field_strength
+field_name: field_strength
+entity_type: node
+bundle: subject
+label: Strength
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      strength: strength
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

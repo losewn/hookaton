@@ -1,0 +1,22 @@
+uuid: 49a9588a-f3bd-44fe-898a-236981e06a5e
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - hookaton_olivero
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: hookaton_olivero_help
+theme: hookaton_olivero
+region: header
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

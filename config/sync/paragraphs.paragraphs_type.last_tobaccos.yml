@@ -1,0 +1,10 @@
+uuid: b9896bba-ad67-4723-945c-e9d5a13a320a
+langcode: uk
+status: true
+dependencies: {  }
+id: last_tobaccos
+label: 'Last tobaccos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

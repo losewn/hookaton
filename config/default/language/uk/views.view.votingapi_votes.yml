@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      fields:
+        value:
+          label: Значення
+  admin_page:
+    display_options:
+      fields:
+        value:
+          label: Значення
