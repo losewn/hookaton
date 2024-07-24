@@ -22,8 +22,8 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 1. Clone this repo into your Projects directory
 
     ```
-    git clone https://github.com/docksal/boilerplate-drupal9-composer.git drupal9
-    cd drupal9
+    git clone git@github.com:losewn/hookaton.git
+    cd hookaton
     ```
 
 2. Initialize the site
@@ -38,10 +38,18 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 3. Point your browser to
 
     ```
-    http://drupal9.docksal
+    http://hookaton.docksal.site/
     ```
 
 When the automated install is complete the command line output will display the admin username and password.
+
+Actual configurations in the database. They are not synchronized!
+You have to create files in the `config/sync` directory:
+
+    ```
+    sendinblue.config_global.settings.yml
+    openid_connect.client.google.yml
+    ```
 
 
 ## More automation with 'fin init'
@@ -63,3 +71,4 @@ Some common tasks that can be handled by the init script (an other [custom comma
 This repo is intended for quick start demos and includes a hardcoded value for `hash_salt` in `settings.php`.
 If you are basing your project code base on this repo, make sure you regenerate and update the `hash_salt` value.
 A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";'`
+
