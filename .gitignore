@@ -83,3 +83,7 @@ Thumbs.db
 
 # Ignore node modules
 /web/**/node_modules/
+
+config/sync/sendinblue.config_global.settings.yml
+config/sync/openid_connect.client.google.yml
+
