@@ -1,8 +1,0 @@
-uuid: eafc771f-06bb-40b6-9d49-7284e9c27587
-langcode: en
-status: true
-dependencies: {  }
-name: 'Price category'
-vid: price_category
-description: 'Tobacco price categories'
-weight: 0

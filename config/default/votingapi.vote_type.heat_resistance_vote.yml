@@ -1,8 +1,0 @@
-uuid: fcb4e8b8-c086-482c-a4d2-8b347dad9d0d
-langcode: en
-status: true
-dependencies: {  }
-id: heat_resistance_vote
-label: 'Heat Resistance vote'
-value_type: points
-description: ''

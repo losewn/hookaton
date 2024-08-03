@@ -1,8 +1,0 @@
-uuid: bbce0299-eceb-4963-b61e-09fcf8873476
-langcode: en
-status: true
-dependencies: {  }
-id: strength_vote
-label: 'Strength vote'
-value_type: points
-description: ''

@@ -1,8 +1,0 @@
-uuid: 7ae42f09-e8b6-4937-8728-26d5c0613135
-langcode: en
-status: true
-dependencies: {  }
-name: Manufacturer
-vid: manufacturer
-description: ''
-weight: 0

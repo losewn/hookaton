@@ -1,8 +1,0 @@
-uuid: ffa3a689-1a05-40c9-ad6a-d0b75bf423fe
-langcode: en
-status: true
-dependencies: {  }
-name: Smokeness
-vid: smokeness
-description: 'Tobacco smokeness'
-weight: 0

@@ -1,9 +1,0 @@
-uuid: e5f9c3e2-89c9-48f4-b989-dfb39c3df674
-langcode: uk
-status: true
-dependencies: {  }
-id: uk
-label: ua
-direction: ltr
-weight: 1
-locked: false
