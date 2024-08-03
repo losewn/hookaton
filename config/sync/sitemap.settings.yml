@@ -1,9 +1,0 @@
-_core:
-  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU
-langcode: uk
-page_title: 'Мапа сайту'
-message:
-  value: ''
-  format: plain_text
-plugins: {  }
-include_css: true

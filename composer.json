@@ -62,6 +62,7 @@
         "drupal/pathauto": "^1.9",
         "drupal/search_api": "^1.30",
         "drupal/sendinblue": "^2.0",
+        "drupal/simple_sitemap": "^4.1",
         "drupal/sitemap": "^2.0@beta",
         "drupal/smart_trim": "^2.1",
         "drupal/stage_file_proxy": "^1.2",
