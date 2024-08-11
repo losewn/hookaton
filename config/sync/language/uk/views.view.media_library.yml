@@ -12,7 +12,7 @@ display:
       filters:
         name:
           expose:
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"
         bundle:
           expose:
             label: 'Тип носія'
@@ -35,13 +35,13 @@ display:
       filters:
         name:
           expose:
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"
   widget_table:
     display_options:
       fields:
         name:
-          label: 'Назва (ім''я)'
+          label: "Назва (ім'я)"
       filters:
         name:
           expose:
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"

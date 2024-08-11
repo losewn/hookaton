@@ -1,6 +1,6 @@
 {
     "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 8 projects with a relocated document root",
+    "description": "Project template for Drupal projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -12,83 +12,83 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package" : {
-                "name" :    "dinbror/blazy",
-                "version" : "v1.8.2",
-                "type" :    "drupal-library",
-                "source" : {
-                    "url" : "https://github.com/dinbror/blazy",
-                    "type" : "git",
-                    "reference" : "master"
-                }
-            }
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "dinbror/blazy": "^1.8",
-        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/antibot": "^2.0",
         "drupal/backup_migrate": "^5.0",
         "drupal/blazy": "^3.0",
         "drupal/block_class": "^2.0",
+        "drupal/ckeditor": "^1.0",
         "drupal/cleantalk": "^9.4",
-        "drupal/core-composer-scaffold": "^9.5",
-        "drupal/core-recommended": "^9.5",
+        "drupal/color": "^1.0",
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-project-message": "^10.0",
+        "drupal/core-recommended": "^10.0",
         "drupal/ctools": "^4.1",
         "drupal/devel": "^5.1",
-        "drupal/entity_reference_revisions": "^1.11",
-        "drupal/exif_orientation": "^1.1",
+        "drupal/entity_clone": "^2.0@beta",
+        "drupal/entity_reference_revisions": "^1.12",
+        "drupal/exif_orientation": "^1.4",
         "drupal/externalauth": "^2.0",
+        "drupal/facebook_pixel": "^2.0@RC",
         "drupal/facets": "^3.0@beta",
-        "drupal/field_group": "^3.2",
+        "drupal/field_group": "^3.6",
         "drupal/fivestar": "^1.0@alpha",
-        "drupal/gin": "^3.0@RC",
-        "drupal/gin_login": "^2.1",
-        "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/gin": "^3.0@rc",
+        "drupal/gin_login": "^2.0",
+        "drupal/gin_toolbar": "^1.0@rc",
         "drupal/google_analytics": "^4.0",
         "drupal/google_api_client": "^4.3",
         "drupal/googlelogin-googlelogin": "^9.2",
         "drupal/layout_paragraphs": "^2.0",
-        "drupal/like_dislike": "^2.1",
+        "drupal/libraries": "4.0.x-dev@dev",
+        "drupal/like_dislike": "^2.4",
         "drupal/loggable": "^2.0",
         "drupal/metatag": "^2.0",
-        "drupal/module_filter": "^4.1",
-        "drupal/openid_connect": "^3.0@alpha",
-        "drupal/paragraphs": "^1.17",
-        "drupal/pathauto": "^1.9",
-        "drupal/search_api": "^1.30",
-        "drupal/sendinblue": "^2.0",
+        "drupal/module_filter": "^5.0",
+        "drupal/openid_connect": "^1.4",
+        "drupal/paragraphs": "^1.16",
+        "drupal/pathauto": "^1.12",
+        "drupal/quick_node_clone": "^1.16",
+        "drupal/rdf": "^2.1",
+        "drupal/robotstxt": "^1.5",
+        "drupal/search_api": "^1.35",
         "drupal/simple_sitemap": "^4.1",
         "drupal/sitemap": "^2.0@beta",
         "drupal/smart_trim": "^2.1",
-        "drupal/stage_file_proxy": "^1.2",
-        "drupal/token": "^1.14",
-        "drupal/twig_tweak": "^3.3",
+        "drupal/stage_file_proxy": "^2.1",
+        "drupal/token": "^1.15",
+        "drupal/twig_tweak": "^3.2",
         "drupal/twig_vardumper": "^3.1",
-        "drupal/upgrade_status": "^3.14",
+        "drupal/upgrade_status": "^4.3",
         "drupal/user_registrationpassword": "^2.0",
         "drupal/viewfield": "^3.0@beta",
         "drupal/views_infinite_scroll": "^2.0",
-        "drupal/vote_up_down": "^1.0@alpha",
-        "drush/drush": "^10.2"
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/webform": "^6.2",
+        "drush/drush": "^11.4",
+        "twig/twig": "^3.6",
+        "vardot/blazy": "1.8.2.1"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "cweagans/composer-patches": true,
-            "drupal/core-project-message": true
-        }
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
+        },
+        "sort-packages": true
     },
     "extra": {
         "drupal-scaffold": {
@@ -118,23 +118,33 @@
             "web/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
         },
-        "patches": {
-            "drupal/core": {
-                "nojs/ajax route parameter in use-ajax link breaks CSRF protection": "https://www.drupal.org/files/issues/drupal-exclude-csrf-paramaters-2670798-4.patch"
-            },
-            "sendinblue/api-v3-sdk": {
-                "#3330960 - Deprecated function: Return type of SendinBlue\\Client\\Model\\SendSmtpEmailTo::offsetExists($offset)": "https://www.drupal.org/files/issues/2023-01-18/3330960-4-sendinblue_api_support_php81.patch"
-            },
-            "drupal/fivestar": {
-                "User deprecated function: Theme functions are deprecated in drupal:8.0.0": "https://www.drupal.org/files/issues/2023-10-29/3256199_34.patch"
-            }
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
         }
-    },
-    "require-dev": {
-        "kint-php/kint": "^4.1"
     }
 }

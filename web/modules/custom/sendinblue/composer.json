@@ -1,0 +1,11 @@
+{
+    "name": "drupal/sendinblue",
+    "type": "drupal-module",
+    "description": "SendinBlue email service integration",
+    "homepage": "http://drupal.org/project/sendinblue",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/core": "^8.8 || ^9",
+        "sendinblue/api-v3-sdk": "^7.4"
+    }
+}

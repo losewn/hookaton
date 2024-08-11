@@ -4,7 +4,7 @@ display:
     display_options:
       fields:
         name:
-          label: 'Ім''я користувача'
+          label: "Ім'я користувача"
         status:
           label: Стан
         roles_target_id:

@@ -82,7 +82,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: 'Ім''я користувача'
+          label: "Ім'я користувача"
           exclude: false
           alter:
             alter_text: false
@@ -539,7 +539,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Ім''я чи електронна адреса містять'
+            label: "Ім'я чи електронна адреса містять"
             description: ''
             use_operator: false
             operator: combine_op

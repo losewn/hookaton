@@ -1,0 +1,9 @@
+name: 'Vote Up/Down'
+type: module
+description: 'Provides a configurable up/down voting widget for other modules to use.'
+package: Voting
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - votingapi:votingapi
+configure: vud.admin_advanced_settings

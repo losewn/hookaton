@@ -16,7 +16,7 @@ base theme: olivero
 description: 'A clean, accessible, and flexible Drupal front-end theme.'
 alt text: 'Screenshot of Hookaton Olivero, Drupal front-end theme.'
 package: Custom
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 libraries:
   - hookaton_olivero/global-styling
 regions:

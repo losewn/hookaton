@@ -294,7 +294,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"
             description: ''
             use_operator: false
             operator: name_op
@@ -993,7 +993,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"
             description: ''
             use_operator: false
             operator: name_op
@@ -1142,7 +1142,7 @@ display:
           entity_type: media
           entity_field: name
           plugin_id: field
-          label: 'Назва (ім''я)'
+          label: "Назва (ім'я)"
           type: string
           settings:
             link_to_entity: false
@@ -1172,6 +1172,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
       access:
         type: perm
         options:
@@ -1275,7 +1284,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Назва (ім''я)'
+            label: "Назва (ім'я)"
             description: ''
             use_operator: false
             operator: name_op

@@ -9,6 +9,7 @@ dependencies:
   module:
     - comment
     - contact
+    - file
     - google_analytics
     - media
     - node
@@ -30,6 +31,7 @@ permissions:
   - 'create subject content'
   - 'delete any blog content'
   - 'delete any subject content'
+  - 'delete own files'
   - 'opt-in or out of google analytics tracking'
   - 'post comments'
   - 'search content'

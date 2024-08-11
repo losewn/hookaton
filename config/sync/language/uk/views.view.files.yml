@@ -4,7 +4,7 @@ display:
     display_options:
       fields:
         filename:
-          label: 'Назва (ім''я)'
+          label: "Назва (ім'я)"
         status:
           label: Стан
       pager:

@@ -398,7 +398,7 @@ display:
           exposed: true
           expose:
             operator_id: authname_op
-            label: 'Ім''я автентифікації'
+            label: "Ім'я автентифікації"
             description: ''
             use_operator: false
             operator: authname_op
