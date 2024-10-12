@@ -14,7 +14,7 @@ dependencies:
   module:
     - search_api
 id: tobacco
-label: Tobacco
+label: Тютюни
 module: views
 description: ''
 tag: ''
@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Tobacco
+      title: Тютюн
       fields:
         field_country:
           id: field_country
@@ -641,6 +641,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

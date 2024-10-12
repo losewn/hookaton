@@ -6,5 +6,6 @@ dependencies:
     - sendinblue
 id: sendinblue_signup_form.token
 label: Token
+description: ''
 targetEntityType: sendinblue_signup_form
 cache: true

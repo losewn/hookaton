@@ -6,5 +6,6 @@ dependencies:
     - votingapi
 id: vote.token
 label: Token
+description: ''
 targetEntityType: vote
 cache: true

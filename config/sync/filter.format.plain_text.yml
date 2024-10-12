@@ -10,25 +10,6 @@ name: 'Plain text'
 format: plain_text
 weight: -7
 filters:
-  filter_html_escape:
-    id: filter_html_escape
-    provider: filter
-    status: true
-    weight: -10
-    settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: true
-    weight: 0
-    settings:
-      filter_url_length: 110
-  filter_autop:
-    id: filter_autop
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -44,3 +25,22 @@ filters:
         img: img
         iframe: iframe
       use_data_uri: '0'
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 110

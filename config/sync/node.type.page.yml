@@ -7,7 +7,7 @@ _core:
 name: 'Проста сторінка'
 type: page
 description: "<em>Прості сторінки</em> використовуються для розміщення незмінюваного вмісту на кшталт сторінки 'Про нас'."
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

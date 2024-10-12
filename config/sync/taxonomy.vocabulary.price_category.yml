@@ -6,3 +6,4 @@ name: 'Price category'
 vid: price_category
 description: 'Tobacco price categories'
 weight: 0
+new_revision: false

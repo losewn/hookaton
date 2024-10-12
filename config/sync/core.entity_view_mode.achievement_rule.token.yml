@@ -6,5 +6,6 @@ dependencies:
     - achievement
 id: achievement_rule.token
 label: Token
+description: ''
 targetEntityType: achievement_rule
 cache: true

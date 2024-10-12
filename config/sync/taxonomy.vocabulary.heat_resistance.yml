@@ -6,3 +6,4 @@ name: 'Heat resistance'
 vid: heat_resistance
 description: 'Tobacco heat resistance'
 weight: 0
+new_revision: false

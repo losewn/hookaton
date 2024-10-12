@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: jvd5Pu6jy-lra4oMr-mR7zuY6CVDv9CaNeoj0Y70gV4
 id: block_content
-label: 'Content blocks'
+label: 'Бібліотека власних блоків'
 module: views
 description: 'Пошук власних блоків та керування ними.'
 tag: default
@@ -287,6 +287,7 @@ display:
             items_per_page_options_all_label: '- Усе -'
             offset: false
             offset_label: Зміщення
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

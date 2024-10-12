@@ -6,5 +6,6 @@ dependencies:
     - achievement
 id: badge.token
 label: Token
+description: ''
 targetEntityType: badge
 cache: true

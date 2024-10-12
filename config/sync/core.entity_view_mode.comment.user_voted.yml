@@ -6,5 +6,6 @@ dependencies:
     - comment
 id: comment.user_voted
 label: 'User voted'
+description: ''
 targetEntityType: comment
 cache: true

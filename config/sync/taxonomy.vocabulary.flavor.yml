@@ -2,7 +2,8 @@ uuid: d4d2d66e-de1b-48fe-8086-539c8805df43
 langcode: en
 status: true
 dependencies: {  }
-name: Flavor
+name: Аромат
 vid: flavor
-description: 'Tobacco flavors'
+description: 'Тютюнові ароматизатори'
 weight: 0
+new_revision: false

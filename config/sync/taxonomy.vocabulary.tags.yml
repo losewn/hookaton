@@ -8,3 +8,4 @@ name: Теґи
 vid: tags
 description: 'Теґи використовуються для групування статей зі схожими темами в категорії.'
 weight: 0
+new_revision: false

@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: Manufacturer
 vid: manufacturer
-description: ''
+description: null
 weight: 0
+new_revision: false
