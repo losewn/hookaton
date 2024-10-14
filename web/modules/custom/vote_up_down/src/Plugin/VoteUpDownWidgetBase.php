@@ -62,12 +62,14 @@ abstract class VoteUpDownWidgetBase extends PluginBase implements VoteUpDownWidg
     // @todo Implement voting API result functions instead of custom queries.
     if ($entityTypeId && $entityId) {
       $up_points = \Drupal::entityQuery('vote')
+        ->accessCheck(FALSE)
         ->condition('value', 1)
         ->condition('entity_type', $entityTypeId)
         ->condition('entity_id', $entityId)
         ->count()
         ->execute();
       $down_points = \Drupal::entityQuery('vote')
+        ->accessCheck(FALSE)
         ->condition('value', -1)
         ->condition('entity_type', $entityTypeId)
         ->condition('entity_id', $entityId)
